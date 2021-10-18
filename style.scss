@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/************
+*************
+mixins
+*************
+*************/
+@mixin bgImg($height) {
+background-position: center;
+background-size: cover;
+height: $height;
+}
+@mixin btn {
+    background: transparent;
+    border: 2px solid $colorWhite;
+    border-radius: 10px;
+    color: $colorWhite;
+    font-size: .9rem;
+    padding: 10px 20px;
+    margin-top: 25px;
+    &:hover {
+        background-color: rgba($lightGray, .1);
+        transition: $transition;
+        cursor: pointer;
+    }
+}
+
+/************
+*************
+variables
+*************
+*************/
+$fontFamily: 'Lato', sans-serif;
+$fontSize: 16px;
+$colorWhite: #fff;
+$colorBlack: #000;
+$lightGray: lightgray;
+$padding: 70px 0;
+$transition: .4 ease;
+
+/************
+*************
+basic styles
+*************
+*************/
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body {
+font-family: $fontFamily;
+font-size: $fontSize;
+line-height: 1.6;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+}
+h2 + p {
+    font-size: .9rem;
+    font-weight: 300;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: $transition;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+/************
+*************
+header
+*************
+*************/
+header {
+    background-image: linear-gradient(
+    rgba(255, 255, 255, .06), 
+    rgba(255, 255, 255, .06)),url(img/header-bg.jpg);
+    @include bgImg(80vh);
+    nav {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between; 
+    .logo {
+        color: $colorWhite;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        &:hover {
+            color: $lightGray;
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-left: 15px;
+            a {
+                color: $lightGray;
+                font-weight: 300;
+                font-size: .9rem;
+                &:hover {
+                    color: $colorWhite;
+                }
+            }
+            .active {
+                color: $colorWhite;
+                border: 1px solid $colorWhite;
+                border-radius: 8px;
+                padding: 10px;
+                &:hover {
+                    color: $lightGray;
+                }
+            }
+        }
+    }
+  }
+            hgroup {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 60vh;
+                h1 {
+                    color: $colorWhite;
+                    font-size: 3rem;
+                }
+                h3 {
+                    color: $lightGray;
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                }
+                button {
+                    @include btn;
+                }
+            }
+}

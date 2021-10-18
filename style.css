@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/************
+*************
+mixins
+*************
+*************/
+/************
+*************
+variables
+*************
+*************/
+/************
+*************
+basic styles
+*************
+*************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h2 + p {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/************
+*************
+header
+*************
+*************/
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.06)), to(rgba(255, 255, 255, 0.06))), url(img/header-bg.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), url(img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+header nav {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header nav .logo:hover {
+  color: lightgray;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  color: lightgray;
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+header nav ul li .active {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+header nav ul li .active:hover {
+  color: lightgray;
+}
+
+header hgroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+}
+
+header hgroup h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+header hgroup h3 {
+  color: lightgray;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+header hgroup button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: .9rem;
+  padding: 10px 20px;
+  margin-top: 25px;
+}
+
+header hgroup button:hover {
+  background-color: rgba(211, 211, 211, 0.1);
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
