@@ -36,7 +36,7 @@ h2 {
 }
 
 h2 + p {
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -166,5 +166,68 @@ header hgroup button:hover {
   -webkit-transition: 0.4 ease;
   transition: 0.4 ease;
   cursor: pointer;
+}
+
+/************
+*************
+about
+*************
+*************/
+.about {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.about .container article i {
+  color: #000;
+  font-size: 2rem;
+}
+
+.about .container article p {
+  color: lightgray;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.about .container article button {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: .9rem;
+  padding: 10px 20px;
+  margin-top: 25px;
+  border: 2px solid #000;
+  color: #000;
+  margin-top: 35px;
+}
+
+.about .container article button:hover {
+  background-color: rgba(211, 211, 211, 0.1);
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+  cursor: pointer;
+}
+
+.about .container article button:hover {
+  background-color: lightgray;
 }
 /*# sourceMappingURL=style.css.map */
