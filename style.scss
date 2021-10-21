@@ -59,10 +59,16 @@ h1, h2, h3, h4 {
 }
 h2 {
     font-size: 2rem;
+    @media(max-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 h2 + p {
     font-size: 1rem;
     font-weight: 300;
+    @media(max-width: 768px) {
+        font-size: .9rem;
+    }
 }
 ul {
     list-style: none;
@@ -75,6 +81,9 @@ a {
 .container {
     width: 80%;
     margin: auto;
+    @media(max-width: 768px) {
+        width: 95%;
+    }
 }
 /************
 *************
@@ -89,11 +98,19 @@ header {
     nav {
         padding: 50px 0;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
     .logo {
         color: $colorWhite;
         font-size: 2.5rem;
         letter-spacing: 1px;
+        @media(max-width: 768px) {
+            font-size: 2rem;
+            letter-spacing: .5px;
+            text-align: center;
+        }
         &:hover {
             color: $lightGray;
         }
@@ -101,12 +118,21 @@ header {
     ul {
         display: flex;
         align-items: center;
+        @media(max-width: 768px) {
+           flex-direction: column;
+        }
         li {
             margin-left: 15px;
+            @media(max-width: 768px) {
+                margin-left: 5px;
+            }
             a {
                 color: $lightGray;
                 font-weight: 300;
                 font-size: .9rem;
+                @media(max-width: 768px) {
+                    font-size: .8rem;
+                }
                 &:hover {
                     color: $colorWhite;
                 }
@@ -116,6 +142,10 @@ header {
                 border: 1px solid $colorWhite;
                 border-radius: 8px;
                 padding: 10px;
+                @media(max-width: 768px) {
+                    border-radius: 6px;
+                    padding: 7px;
+                }
                 &:hover {
                     color: $lightGray;
                 }
@@ -129,14 +159,23 @@ header {
                 align-items: center;
                 justify-content: center;
                 height: 60vh;
+                @media(max-width: 768px) {
+                    height: 30vh;
+                }
                 h1 {
                     color: $colorWhite;
                     font-size: 3rem;
+                    @media(max-width: 768px) {
+                        font-size: 2rem;
+                    }
                 }
                 h3 {
                     color: $lightGray;
                     font-size: 1.3rem;
                     font-weight: 300;
+                    @media(max-width: 768px) {
+                        font-size: .9rem;
+                    }
                 }
                 button {
                     @include btn;
@@ -160,9 +199,16 @@ about
         margin-top: 50px;
         article {
             flex: 0 0 32%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             i {
                 color: $colorBlack;
                 font-size: 2rem;
+                @media(max-width: 768px) {
+                    font-size: 1.5rem;
+                    margin-top: 15px;
+                }
             }
             p {
                 color: $lightGray;
