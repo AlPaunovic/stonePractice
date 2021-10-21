@@ -181,3 +181,49 @@ about
         }
     }
 }
+/************
+*************
+contact
+*************
+*************/
+
+.contact {
+    padding: 70px 0 30px 0;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    text-align: center;
+    p {
+        color: $lightGray;
+    }
+    .text {
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    button {
+        @include btn;
+    }
+}
+
+/************
+*************
+footer
+*************
+*************/
+
+footer {
+    padding: 30px 0 50px 0;
+    text-align: center;
+    background-color: $colorBlack;
+    color: $lightGray;
+    p {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+    span {
+        color: $colorWhite;
+    }
+    a {
+        color: $colorWhite;
+        font-weight: 400;
+    }
+}
